@@ -9,4 +9,9 @@ fun main() {
     println("Hello, $name!")
 
 
+    // declared with var and val keywords
+    var techstack: String = "KMM"
+    val launched: Int = 2017
+    println("Did you know that ${techstack} was launched in $launched")
+
 }
