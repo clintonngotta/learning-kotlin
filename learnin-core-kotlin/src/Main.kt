@@ -4,19 +4,25 @@
 
 // const should be defined outside the function and will never change , value must be know before execution
 
-const val PI = 3.14
-
 fun main() {
 
-    val name: String = "Learning Kotlin"
-    var age =20
-    println(name)
-    println("$name $age yrs old")
-    println(name.length) // lenght of letters
-    println(name.uppercase()) // prints uppercase
-    println(name.lowercase()) // prints lowercase
-    println(name[0]) // prints first letter
-    println(name.isEmpty()) // check if string is empty
+
+var greetings = """
+    Hello
+        How Are
+    You
+""".trimIndent()
+
+    println(greetings)
+
+
+    var greetingsWithParams = """
+    Hello %S
+        How Are
+    You
+""".trimIndent()
+
+    println(greetingsWithParams.format("Clinton"))
 
 
 }
