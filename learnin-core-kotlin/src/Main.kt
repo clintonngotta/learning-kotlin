@@ -25,7 +25,14 @@ fun main() {
 
     var any: Any = 10 // any datatype, declare specific data types
 
+    var name: String? = "Learning" // declare nullable variable
+    name = "null safety"
+    println(name?.uppercase()) // prints uppercase if not null and null if null
 
+
+    var course: String? = "Kotlin" // declare nullable variable
+    course = null
+    println(course?.uppercase()) // prints null
     // variable types can be inferred
     // var mutable, val immutable
 
